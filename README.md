@@ -27,9 +27,27 @@ if(index !== -1)
   this.splice(index, 1);
 ```
 
-I absolutly don't want to write this piece of code everyting I want to remove something from an array.
+I absolutly don't want to write this piece of code for every time I want to remove something from an array.
 
 Thanks to JSExtends you can simply do:
 ```
 my_array.remove(my_element);
 ```
+
+## List a methods:
+
+### Strings
+
+* capitalize: change first letter of a string to be uppercased.
+* empty: check if a string is empty (return true of false)
+* toASCCI: remove all non-ASCII characters from the string
+
+### Arrays
+
+* pushIfValid: add element to an array only if element is valid (not null nor undefined)
+* first: return fist element of array (or null if array is empty)
+* last: return last element of array (or null if array is empty)
+* size: alias for length. Length is more appropriate for the size of a string. For an array, asking for the size, not the length, if more comprehensible
+* empty: check if an array is empty
+* unique: return an array with no duplicates
+* remove: remove an element from an array
