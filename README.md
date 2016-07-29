@@ -38,9 +38,9 @@ my_array.remove(my_element);
 
 ### Strings
 
-* capitalize: change first letter of a string to be uppercased.
-* empty: check if a string is empty (return true of false)
-* toASCCI: remove all non-ASCII characters from the string
+* _capitalize_: change first letter of a string to be uppercased.
+* _empty_: check if a string is empty (return true of false)
+* _toASCCI_: remove all non-ASCII characters from the string
 
 ### Arrays
 
