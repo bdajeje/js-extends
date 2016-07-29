@@ -44,10 +44,10 @@ my_array.remove(my_element);
 
 ### Arrays
 
-* pushIfValid: add element to an array only if element is valid (not null nor undefined)
-* first: return fist element of array (or null if array is empty)
-* last: return last element of array (or null if array is empty)
-* size: alias for length. Length is more appropriate for the size of a string. For an array, asking for the size, not the length, if more comprehensible
-* empty: check if an array is empty
-* unique: return an array with no duplicates
-* remove: remove an element from an array
+* _pushIfValid_: add element to an array only if element is valid (not null nor undefined)
+* _first_: return fist element of array (or null if array is empty)
+* _last_: return last element of array (or null if array is empty)
+* _size_: alias for length. Length is more appropriate for the size of a string. For an array, asking for the size, not the length, if more comprehensible
+* _empty_: check if an array is empty
+* _unique_: return an array with no duplicates
+* _remove_: remove an element from an array
