@@ -17,7 +17,8 @@ String.prototype.toASCII = function() {
 /************* ARRAY **************/
 
 Array.prototype.pushIfValid = function(input) {
-  if(input) this.push(input);
+  if(input !== undefined && input !== null) 
+    this.push(input);
 };
 
 Array.prototype.first = function() {
