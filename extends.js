@@ -17,7 +17,7 @@ String.prototype.toASCII = function() {
 /************* ARRAY **************/
 
 Array.prototype.pushIfValid = function(input) {
-  if(input !== undefined && input !== null) 
+  if(input !== undefined && input !== null)
     this.push(input);
 };
 
@@ -58,4 +58,20 @@ Array.prototype.remove = function(element) {
     this.splice(index, 1);
 
   return index;
+}
+
+/*! Check all elements in array, remove them if not respecting given condition
+ *  \param condition - function getting one parameter, an element from the array.
+ *                     if the conditition returns false the element is removed, otherwise kept.
+ *  \returns a new array without the removed elements
+ */
+Array.prototype.removeIf = function(conditition) {
+  let results = [];
+
+  this.forEach(function(element) {
+    if(conditition(element))
+      results.push(element);
+  });
+
+  return results;
 }
