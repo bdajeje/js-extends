@@ -69,7 +69,7 @@ Array.prototype.removeIf = function(conditition) {
   let results = [];
 
   this.forEach(function(element) {
-    if(conditition(element))
+    if(!conditition(element))
       results.push(element);
   });
 
